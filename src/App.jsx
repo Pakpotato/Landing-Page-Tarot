@@ -1,9 +1,27 @@
+import Navbar from "./components/Navbar"
+import Hero from "./sections/Hero"
+import About from "./sections/About"
+import Services from "./sections/Services"
+import TikTok from "./sections/TikTok"
+import Testimonials from "./sections/Testimonials"
+import Products from "./sections/Products"
+import CTA from "./sections/CTA"
+import Footer from "./sections/Footer"
+
 export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-green-400">
-        Ratu Kidul Tarot
-      </h1>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <TikTok />
+        <Testimonials />
+        <Products />
+        <CTA />
+      </main>
+      <Footer />
+    </>
   )
 }
