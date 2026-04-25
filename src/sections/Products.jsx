@@ -6,9 +6,9 @@ import { products, siteData } from "../data/siteData"
 export default function Products() {
   const carouselRef = useRef(null)
 
-  function getWhatsappUrl(productName) {
+  function getWhatsappUrl(product) {
     return `https://wa.me/${siteData.whatsappNumber}?text=${encodeURIComponent(
-      `Halo Bunda Ratu, saya ingin order / tanya tentang ${productName}.`
+      `Halo Bunda Ratu, saya ingin tanya tentang produk ${product.name} dengan harga ${product.price || "yang tersedia"}.`
     )}`
   }
 
@@ -31,16 +31,16 @@ export default function Products() {
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-emerald-300/80">
-              Produk & Paket
+              Produk
             </p>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              Pilih layanan yang sesuai kebutuhanmu
+              Produk spiritual pilihan
             </h2>
 
             <p className="mt-5 text-base leading-8 text-emerald-50/70">
-              Pilih paket konsultasi atau produk yang tersedia, lalu lanjutkan
-              pemesanan melalui WhatsApp.
+              Beberapa produk pilihan yang tersedia dapat ditanyakan langsung
+              melalui WhatsApp untuk informasi stok, detail, dan cara pemesanan.
             </p>
           </div>
         </Reveal>
@@ -68,7 +68,7 @@ export default function Products() {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="h-56 w-full object-cover"
+                    className="h-64 w-full object-cover"
                   />
 
                   <div className="p-5">
@@ -78,17 +78,24 @@ export default function Products() {
                       {product.description}
                     </p>
 
-                    <p className="mt-4 font-semibold text-emerald-300">
-                      {product.price}
-                    </p>
+                    {product.price && (
+                      <div className="mt-4">
+                        <p className="text-xs uppercase tracking-[0.2em] text-emerald-50/40">
+                          Harga mulai
+                        </p>
+                        <p className="mt-1 text-lg font-bold text-emerald-300">
+                          {product.price}
+                        </p>
+                      </div>
+                    )}
 
                     <a
-                      href={getWhatsappUrl(product.name)}
+                      href={getWhatsappUrl(product)}
                       target="_blank"
                       rel="noreferrer"
                       className="mt-5 inline-flex w-full justify-center rounded-full bg-emerald-400 px-5 py-3 text-sm font-semibold text-emerald-950 transition hover:bg-emerald-300"
                     >
-                      Tanya via WhatsApp
+                      Tanya Produk via WhatsApp
                     </a>
                   </div>
                 </article>

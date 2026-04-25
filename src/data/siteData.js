@@ -18,21 +18,24 @@ export const testimonials = [
 
 export const products = [
   {
-    name: "Konsultasi Tarot Personal",
-    description: "Sesi konsultasi untuk membaca energi, situasi, dan arah keputusan.",
-    price: "Mulai dari Rp50.000",
+    name: "7 Chakra Set",
+    description:
+      "Produk spiritual pilihan yang bisa ditanyakan langsung ketersediaan dan penggunaannya melalui WhatsApp.",
+    price: "Rp150.000",
     image: "/products/7Chakra.jpeg",
   },
   {
-    name: "Bacaan Cinta & Hubungan",
-    description: "Untuk memahami energi hubungan, perasaan, dan arah komunikasi.",
-    price: "Mulai dari Rp50.000",
+    name: "Minyak Asmara",
+    description:
+      "Produk spiritual pilihan yang bisa ditanyakan langsung ketersediaan dan penggunaannya melalui WhatsApp",
+    price: "Rp150.000",
     image: "/products/MinyakAsmara.jpeg",
   },
   {
-    name: "Bacaan Rezeki & Karier",
-    description: "Untuk melihat potensi, hambatan, dan arahan dalam pekerjaan.",
-    price: "Mulai dari Rp50.000",
+    name: "Minyak Nusantara",
+    description:
+      "Produk spiritual pilihan yang bisa ditanyakan langsung ketersediaan dan penggunaannya melalui WhatsApp",
+    price: "Rp150.000",
     image: "/products/MinyakNusantara.jpeg",
   },
 ]
