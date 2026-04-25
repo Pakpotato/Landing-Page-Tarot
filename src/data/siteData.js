@@ -11,9 +11,9 @@ export const siteData = {
 }
 
 export const testimonials = [
-  { image: "/Testimonial1.jpeg", alt: "Testimoni konsultasi tarot 1" },
-  { image: "/Testimonial2.jpeg", alt: "Testimoni konsultasi tarot 2" },
-  { image: "/Testimonial3.jpeg", alt: "Testimoni konsultasi tarot 3" },
+  { image: "/testimonies/Testimoni1.jpeg", alt: "Testimoni konsultasi tarot 1" },
+  { image: "/testimonies/Testimoni2.jpeg", alt: "Testimoni konsultasi tarot 2" },
+  { image: "/testimonies/Testimoni3.jpeg", alt: "Testimoni konsultasi tarot 3" },
 ]
 
 export const products = [
