@@ -28,14 +28,14 @@ export const products = [
     name: "Minyak Asmara",
     description:
       "Produk spiritual pilihan yang bisa ditanyakan langsung ketersediaan dan penggunaannya melalui WhatsApp",
-    price: "Rp150.000",
+    price: "Rp5.000.000",
     image: "/products/MinyakAsmara.jpeg",
   },
   {
     name: "Minyak Nusantara",
     description:
       "Produk spiritual pilihan yang bisa ditanyakan langsung ketersediaan dan penggunaannya melalui WhatsApp",
-    price: "Rp150.000",
+    price: "Rp5.000.000",
     image: "/products/MinyakNusantara.jpeg",
   },
 ]
